@@ -5,6 +5,8 @@
 This is a repository to give a user interface on the Smart Lottery contract.
 This repository is the frontend repository of the [Smart Lottery contract](https://github.com/jrchain/smart-lottery). However you absolutly can use this repository without the backend part.
 
+[Full example of the App here!](https://white-wildflower-6380.on.fleek.co/)
+
 ## Summary
 
 The Smart Lottery contract creates a simple lottery which will picked a random winner once the lottery end.

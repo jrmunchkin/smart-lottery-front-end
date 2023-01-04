@@ -2,8 +2,8 @@ import { useWeb3Contract, useMoralis } from "react-moralis";
 import { useEffect, useState } from "react";
 import { formatUnits } from "@ethersproject/units";
 import { Input } from "web3uikit";
-import { truncateStr } from "../../utils/utils";
-import smartLotteryAbi from "../../constants/smartLottery.json";
+import { truncateStr } from "../../../utils/utils";
+import smartLotteryAbi from "../../../constants/smartLottery.json";
 
 export default function HistoryBox({ smartLotteryAddress }) {
   const { isWeb3Enabled, account } = useMoralis();

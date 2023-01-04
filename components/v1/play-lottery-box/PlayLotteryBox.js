@@ -4,8 +4,8 @@ import { formatUnits } from "@ethersproject/units";
 import { Button, useNotification } from "web3uikit";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import { useBetween } from "use-between";
-import { useLottery } from "../../hooks/useLottery";
-import smartLotteryAbi from "../../constants/smartLottery.json";
+import { useLottery } from "../../../hooks/useLottery";
+import smartLotteryAbi from "../../../constants/smartLottery.json";
 
 export default function PlayLotteryBox({ smartLotteryAddress }) {
   const { setIsLotteryChange, lotteryNumber, setLotteryNumber } =

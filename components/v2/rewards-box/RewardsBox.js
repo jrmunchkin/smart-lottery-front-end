@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import { formatUnits } from "@ethersproject/units";
 import { Button, useNotification } from "web3uikit";
 import { useBetween } from "use-between";
-import { useLottery } from "../../hooks/useLottery";
-import smartLotteryAbi from "../../constants/smartLottery.json";
+import { useLotteryV2 } from "../../../hooks/useLotteryV2";
+import smartLotteryAbi from "../../../constants/smartLotteryV2.json";
 
 export default function RewardsBox({ smartLotteryAddress }) {
-  const { isLotteryChange, setIsLotteryChange } = useBetween(useLottery);
+  const { fetchingTickets } = useBetween(useLotteryV2);
   const { isWeb3Enabled, account } = useMoralis();
   const [userRewards, setUserRewards] = useState("0");
 
@@ -70,14 +70,13 @@ export default function RewardsBox({ smartLotteryAddress }) {
   useEffect(() => {
     if (isWeb3Enabled) {
       updateUI();
-      setIsLotteryChange(false);
     }
-  }, [isWeb3Enabled, account, isLotteryChange]);
+  }, [isWeb3Enabled, account, fetchingTickets]);
 
   return (
     <div className="flex items-center flex-col">
       <h1 className="text-white text-2xl p-4">
-        Claim your rewards from lottery!
+        Claim your rewards from lotteries!
       </h1>
       <div className="box-border w-96 h-40 rounded-lg border-2 bg-white">
         <div className="flex items-center p-4 flex-col">

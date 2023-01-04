@@ -1,6 +1,6 @@
 import { useMoralis } from "react-moralis";
 import { constants } from "ethers";
-import networkMapping from "../constants/contractAddresses.json";
+import networkMapping from "../../constants/contractAddresses.json";
 import LastWinnerBox from "./infos-boxes/LastWinnerBox";
 import HistoryBox from "./infos-boxes/HistoryBox";
 import PlayLotteryBox from "./play-lottery-box/PlayLotteryBox";
@@ -29,7 +29,9 @@ export default function Main() {
   }
 
   const smartLotteryAddress = chainId
-    ? networkMapping[chainId][networkMapping[chainId].length - 1]
+    ? networkMapping[chainId]["SmartLottery"][
+        networkMapping[chainId]["SmartLottery"].length - 1
+      ]
     : constants.AddressZero;
 
   return (

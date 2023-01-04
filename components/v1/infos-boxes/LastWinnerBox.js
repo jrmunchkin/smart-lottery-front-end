@@ -1,9 +1,9 @@
 import { useWeb3Contract, useMoralis } from "react-moralis";
 import { useEffect, useState } from "react";
-import { truncateStr } from "../../utils/utils";
+import { truncateStr } from "../../../utils/utils";
 import { useBetween } from "use-between";
-import { useLottery } from "../../hooks/useLottery";
-import smartLotteryAbi from "../../constants/smartLottery.json";
+import { useLottery } from "../../../hooks/useLottery";
+import smartLotteryAbi from "../../../constants/smartLottery.json";
 
 export default function LastWinnerBox({ smartLotteryAddress }) {
   const { lotteryNumber } = useBetween(useLottery);

@@ -1,6 +1,7 @@
 import { useWeb3Contract, useMoralis } from "react-moralis";
 import { useEffect, useState } from "react";
 import { Input, Button, useNotification } from "web3uikit";
+import { ethers } from "ethers";
 import { formatUnits } from "@ethersproject/units";
 import { useBetween } from "use-between";
 import { useLotteryV2 } from "../../../hooks/useLotteryV2";

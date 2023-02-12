@@ -9,7 +9,7 @@ Version 2
 ![App](public/images/readme-app-v2.png)
 
 This is a repository to give a user interface on the Smart Lottery contracts.
-This repository is the frontend repository of the [Smart Lottery contracts](https://github.com/jrchain/smart-lottery). However you absolutly can use this repository without the backend part.
+This repository is the frontend repository of the [Smart Lottery contracts](https://github.com/jrmunchkin/smart-lottery). However you absolutly can use this repository without the backend part.
 
 [Full example of the App here!](https://white-wildflower-6380.on.fleek.co/)
 
@@ -73,7 +73,7 @@ Please install or have installed the following:
 1. Clone this repository
 
 ```
-git clone https://github.com/jrchain/smart-lottery-front-end
+git clone https://github.com/jrmunchkin/smart-lottery-front-end
 cd smart-lottery-front-end
 ```
 
@@ -86,6 +86,6 @@ yarn dev
 
 ## Testing
 
-The Application can be use locally thanks to hardhat node with the [backend repository](https://github.com/jrchain/smart-lottery). You need to add the hardhat network in your metamask and export an account.
+The Application can be use locally thanks to hardhat node with the [backend repository](https://github.com/jrmunchkin/smart-lottery). You need to add the hardhat network in your metamask and export an account.
 
 You also can use goerli network. Be sure to connect with goerli network on your metamask.

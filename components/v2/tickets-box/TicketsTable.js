@@ -41,14 +41,14 @@ export default function TicketsTable({
           "Loading..."
         ) : (
           <Table
-            columnsConfig="100px 100px 100px"
+            columnsConfig="90px 90px 90px"
             customNoDataText={customText}
             isLoading={fetching}
             data={updateTickets}
             header={[
               <span>Ticket</span>,
               <span>Matching</span>,
-              <span>Is Winning?</span>,
+              <span>Winning?</span>,
             ]}
             isColumnSortable={[false, true, true]}
             pageSize={4}

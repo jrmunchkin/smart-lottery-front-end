@@ -36,13 +36,13 @@ export default function Main() {
 
   return (
     <div className="text-center">
-      <div className="inline-flex gap-10">
+      <div className="lg:inline-flex gap-10">
         <LastWinnerBox smartLotteryAddress={smartLotteryAddress} />
         <HistoryBox smartLotteryAddress={smartLotteryAddress} />
         <RewardsBox smartLotteryAddress={smartLotteryAddress} />
       </div>
       <div className="p-4">
-        <div className="inline-flex gap-10">
+        <div className="lg:inline-flex gap-10">
           <PlayLotteryBox smartLotteryAddress={smartLotteryAddress} />
         </div>
       </div>

@@ -78,7 +78,7 @@ export default function RewardsBox({ smartLotteryAddress }) {
       <h1 className="text-white text-2xl p-4">
         Claim your rewards from lotteries!
       </h1>
-      <div className="box-border w-96 h-40 rounded-lg border-2 bg-white">
+      <div className="box-border w-80 md:w-330 xl:w-96 h-40 rounded-lg border-2 bg-white">
         <div className="flex items-center p-4 flex-col">
           <div className="inline-flex items-center gap-2">
             <div className="font-bold text-2xl">{userRewards}</div>

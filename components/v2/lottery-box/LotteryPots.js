@@ -6,14 +6,14 @@ export default function LotteryPots({
   nbPlayers,
 }) {
   return (
-    <div className="w-360">
+    <div className="w-72 lg:w-360">
       {prizeDistribution.length == 0 ? (
         "Loading..."
       ) : (
         <Accordion
           id="pots"
-          subTitle={"Total : " + lotteryBalance + " ETH"}
-          tagText={nbPlayers + " player(s)"}
+          subTitle={lotteryBalance + " ETH"}
+          tagText={nbPlayers + " players"}
         >
           <Table
             columnsConfig="180px 140px"

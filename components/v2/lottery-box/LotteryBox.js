@@ -154,7 +154,7 @@ export default function LotteryBox({ smartLotteryAddress, lotteryNumber }) {
   return (
     <div className="flex items-center flex-col">
       <h1 className="text-white text-2xl p-4"> See the lottery! </h1>
-      <div className="box-border w-96 h-600 rounded-lg border-2 bg-white">
+      <div className="box-border w-80 md:w-330 xl:w-96 h-600 rounded-lg border-2 bg-white">
         <div className="flex absolute items-end flex-col">
           <LotteryRulesModal
             isVisible={showModal}

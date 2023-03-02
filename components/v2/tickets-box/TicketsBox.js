@@ -65,9 +65,9 @@ export default function TicketsBox({ smartLotteryAddress, lotteryNumber }) {
   return (
     <div className="flex items-center flex-col">
       <h1 className="text-white text-2xl p-4">Your tickets!</h1>
-      <div className="box-border w-96 h-600 rounded-lg p-4 border-2 bg-white">
+      <div className="box-border w-80 md:w-330 xl:w-96 h-600 rounded-lg p-4 border-2 bg-white">
         <TabList defaultActiveKey={0} tabStyle="bar">
-          <Tab tabKey={0} tabName={"Actual lottery (" + lotteryNumber + ")"}>
+          <Tab tabKey={0} tabName={"Lottery (" + lotteryNumber + ")"}>
             {loadTickets ? (
               "Loading..."
             ) : (
@@ -81,10 +81,7 @@ export default function TicketsBox({ smartLotteryAddress, lotteryNumber }) {
               <BuyTicketsButton smartLotteryAddress={smartLotteryAddress} />
             </div>
           </Tab>
-          <Tab
-            tabKey={1}
-            tabName={"Last lottery (" + (lotteryNumber - 1) + ")"}
-          >
+          <Tab tabKey={1} tabName={"Lottery (" + (lotteryNumber - 1) + ")"}>
             {loadTickets ? (
               "Loading..."
             ) : (

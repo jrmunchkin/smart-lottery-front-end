@@ -67,7 +67,7 @@ export default function Main() {
     <div className="text-center">
       {loadGame ? (
         <Fragment>
-          <div className="inline-flex gap-10">
+          <div className="lg:inline-flex gap-10">
             <div className="flex  flex-col">
               <WinningTicketBox lotteryNumber={lotteryNumber} />
               <RewardsBox smartLotteryAddress={smartLotteryAddress} />

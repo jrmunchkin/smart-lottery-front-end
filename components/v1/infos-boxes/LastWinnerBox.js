@@ -39,7 +39,7 @@ export default function LastWinnerBox({ smartLotteryAddress }) {
   return (
     <div className="flex items-center flex-col">
       <h1 className="text-white text-2xl p-4">Last winner!</h1>
-      <div className="box-border w-96 h-40 rounded-lg p-4 border-2 bg-white">
+      <div className="box-border w-80 md:w-330 xl:w-96 h-40 rounded-lg p-4 border-2 bg-white">
         <div className="flex-col flex items-center">
           <div className="p-2">
             {lotteryNumber - 1 <= 0
